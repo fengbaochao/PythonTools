@@ -12,6 +12,7 @@ import xlrd, xlwt
 from openpyxl import Workbook
 from Tools.Path import Path
 
+
 class Excel:
     def read(self, path, sheetIndex=0):
         data = xlrd.open_workbook(path)
@@ -79,7 +80,7 @@ if __name__ == "__main__":
     # print(excel.read(path))
 
     # path = r"C:\Users\FBC\Desktop\题库\001.xls"
-    path = r'C:\Users\FBC\Desktop\题库\001.xlsx'
+    path = r"C:\Users\FBC\Desktop\题库\001.xlsx"
     cols = ["列1", "列2", "列3", "列4"]
     data = []
     for i in range(5):

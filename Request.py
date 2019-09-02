@@ -13,6 +13,7 @@ import json
 import os
 from Tools.Path import Path
 
+
 class Request:
     """
     POST
@@ -53,9 +54,9 @@ class Request:
             code.write(request.content)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     request = Request()
-    url = 'https://mingti.etledu.com/api/Exam/GetServerTime'
+    url = "https://mingti.etledu.com/api/Exam/GetServerTime"
     result = request.post(url=url, data=None, headers=None)
 
     print(result)

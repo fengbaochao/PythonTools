@@ -11,6 +11,7 @@ MSSQL 工具类
 import pymssql
 from Tools.DatabaseInterface import DatabaseInterface
 
+
 class MSSQL(DatabaseInterface):
     def __init__(self, host, user, pwd, name):
         self.host = host
@@ -45,7 +46,7 @@ class MSSQL(DatabaseInterface):
 
     def execNonQuery(self, sql, tuple=None):
         cur = self.__getConnect()
-        cur.execute(sql,tuple)
+        cur.execute(sql, tuple)
         self.conn.commit()
         self.conn.close()
 
@@ -84,5 +85,3 @@ if __name__ == "__main__":
     data = ms.execQuery("SELECT * FROM Teacher")
     for row in data:
         print(row)
-
-

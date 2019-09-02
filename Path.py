@@ -10,6 +10,7 @@ Path 工具类
 
 import os
 
+
 class Path:
     # 获取目录下的所有文件
     def getFileList(self, dir, fileList):
@@ -61,7 +62,7 @@ class Path:
         return round(fsize)  # 保留两位小数
 
 
-if __name__ == '__main__':
-    filePath = r'C:\Users\FBC\Desktop\题库\011建筑电工.xlsx'
+if __name__ == "__main__":
+    filePath = r"C:\Users\FBC\Desktop\题库\011建筑电工.xlsx"
     path = Path()
     print(path.getDicName(filePath))
